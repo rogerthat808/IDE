@@ -6,6 +6,8 @@
     <title>IDE Login</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/d5b1885149.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script async src="login.js"></script>
 </head>
 <body>
     <div class="container">
@@ -13,11 +15,11 @@
             <h1 id="loginTitle">Authentication</h1>
             <div class="usernameBox">
                 <p>Username</p>
-                <input placeholder="Type here...">
+                <input id="nameInput" placeholder="Type here...">
             </div>
             <div class="passwordBox">
                 <p>Passowrd</p>
-                <input placeholder="Type here...">
+                <input id="passwordInput" placeholder="Type here...">
             </div>
             <div class="login-signup">
                 <button onclick="login()" class="loginButton">Log in</button>
@@ -26,16 +28,5 @@
         </div>
     </div>
 </body>
-<script>
 
-function login() {
-    console.log('foo')
-}
-
-function signup() {
-    console.log('bar')
-}
-
-
-</script>
 </html>
